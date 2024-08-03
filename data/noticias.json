@@ -1,0 +1,12 @@
+{
+    "noticias": [
+        {
+            "titulo": "El Hombre LLega a Marte",
+            "contenido": "En un hito sin precedentes en la historia de la exploración espacial, la humanidad ha llegado a Marte. La misión, encabezada por la Agencia Espacial Internacional (AEI), ha marcado un nuevo capítulo en la era de la exploración y la colonización espacial."
+        },
+        {
+            "titulo": "Alienigenas aquí",
+            "contenido": "El 29 de noviembre de 2025, un objeto volador no identificado fue avistado en el cielo sobre Ginebra, Suiza. En cuestión de minutos, la nave descendió suavemente en el prado del Jardín Inglés, una de las áreas más emblemáticas de la ciudad. Las autoridades locales y representantes de la Organización de las Naciones Unidas (ONU) se movilizaron rápidamente para asegurar la zona y establecer un perímetro de seguridad."
+        }
+    ]
+}

@@ -1,0 +1,272 @@
+:root {
+    --color-primario: #E7EFC5;
+    --color-secundario: #F2DDA4;
+    --color-terciario: #71816D;
+    --color-cuaternario: #342A21;
+    --color-blanco: #c7c7c7;
+    --color-negro: #000000;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--color-negro);
+    background: linear-gradient(135deg, rgba(52, 42, 33, 0.9), rgba(113, 129, 109, 0.8)), url('../assets/1290550-1282846529.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+
+
+header {
+    background-color: var(--color-terciario);
+    color: var(--color-blanco);
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-cuaternario);
+    transition: 0.5s;
+}
+.active{
+        background-color: var(--color-cuaternario);
+        color: var(--color-secundario);
+        transition: 0.5s;
+    
+}
+
+#bienvenida{
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 11rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+}
+
+main section {
+    max-width: 800px;
+}
+
+.inicio{
+    background: rgba(255, 255, 255, 0.377);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.445);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.glass{
+        background: rgba(255, 255, 255, 0.377);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.445);
+        border-radius: 10px;
+        margin-bottom: 20px;
+}
+
+
+.contenedor {  /* Línea nueva */
+    display: flex;
+    padding: 20px;
+}
+
+.columna {  /* Línea nueva */
+    flex: 1;
+    padding: 10px;
+}
+.contenedor > .columna {
+    display: flex;
+    flex-direction: column;
+}
+/* Columna izquierda */
+.izquierda {  /* Línea nueva */
+    order: 1;
+    flex-basis: 50%;  /* Ocupa el 50% del ancho del contenedor */
+}
+
+/* Columna derecha */
+.derecha {  /* Línea nueva */
+    order: 2;
+    flex-basis: 50%;  /* Ocupa el 50% del ancho del contenedor */
+}
+
+/* Responsivo: una sola fila en pantallas pequeñas */
+@media (max-width: 1000px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .izquierda, .derecha {
+        flex-basis: 100%;
+    }
+
+    .company-info {
+        display: none; /* Oculta el footer */
+    }
+    #Logo-head{
+        display: none;
+    }
+    main{
+        padding-top: 3rem;
+    padding-bottom: 7rem;
+    }
+}
+
+footer {
+    background-color: var(--color-terciario);
+    color: var(--color-cuaternario);
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-content .social-media img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+
+
+.footer-content .legal-notice a {
+    color: var(--color-blanco);
+    text-decoration: underline;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+#form{
+    margin-top: 1rem;
+}
+fieldset {
+    border: none;
+    border-bottom: 1px solid var(--color-primario);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, select, button {
+    padding: 0.5rem;
+    border: 1px solid var(--color-terciario);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--color-terciario);
+    color: var(--color-blanco);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-cuaternario);
+}
+
+#Logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+#Logo-head{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/***** solo aplica a presupuesto *****/ 
+
+#total-presupuesto {
+    font-weight: bold;
+}
+
+ /***** End solo aplica a presupuesto *****/
+
+
+ /***** solo aplica a contacto *****/ 
+ 
+#mapa {
+    width: 800px;
+    height: 400px;
+    margin-bottom: 1rem;
+    z-index: 0;
+}
+
+
+
+ /***** End solo aplica a contacto *****/
+
+
+/***** solo aplica a Galeria  *****/ 
+
+#lightgallery{
+   
+    padding: 2rem;
+}
+#galeria img{
+    object-fit:cover;
+    height: 250px;
+    width: 350px;
+    border-radius: 1rem 1rem 0 0;
+}
+
+
+ /***** End solo aplica a Galeria *****/
